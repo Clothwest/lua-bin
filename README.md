@@ -14,5 +14,5 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 
 ## Build
 
-> Open the solution in Visual Studio.
+> Open the solution in Visual Studio. 
 > For each of the projects `lua`, `luac`, and `wlua`, right-click and select **Build** to compile the binaries.
