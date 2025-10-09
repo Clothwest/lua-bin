@@ -18,6 +18,70 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\.dependencies\lua-5.4.8\src\lapi.c" />
+    <ClCompile Include="..\.dependencies\lua-5.4.8\src\lauxlib.c" />
+    <ClCompile Include="..\.dependencies\lua-5.4.8\src\lbaselib.c" />
+    <ClCompile Include="..\.dependencies\lua-5.4.8\src\lcode.c" />
+    <ClCompile Include="..\.dependencies\lua-5.4.8\src\lcorolib.c" />
+    <ClCompile Include="..\.dependencies\lua-5.4.8\src\lctype.c" />
+    <ClCompile Include="..\.dependencies\lua-5.4.8\src\ldblib.c" />
+    <ClCompile Include="..\.dependencies\lua-5.4.8\src\ldebug.c" />
+    <ClCompile Include="..\.dependencies\lua-5.4.8\src\ldo.c" />
+    <ClCompile Include="..\.dependencies\lua-5.4.8\src\ldump.c" />
+    <ClCompile Include="..\.dependencies\lua-5.4.8\src\lfunc.c" />
+    <ClCompile Include="..\.dependencies\lua-5.4.8\src\lgc.c" />
+    <ClCompile Include="..\.dependencies\lua-5.4.8\src\linit.c" />
+    <ClCompile Include="..\.dependencies\lua-5.4.8\src\liolib.c" />
+    <ClCompile Include="..\.dependencies\lua-5.4.8\src\llex.c" />
+    <ClCompile Include="..\.dependencies\lua-5.4.8\src\lmathlib.c" />
+    <ClCompile Include="..\.dependencies\lua-5.4.8\src\lmem.c" />
+    <ClCompile Include="..\.dependencies\lua-5.4.8\src\loadlib.c" />
+    <ClCompile Include="..\.dependencies\lua-5.4.8\src\lobject.c" />
+    <ClCompile Include="..\.dependencies\lua-5.4.8\src\lopcodes.c" />
+    <ClCompile Include="..\.dependencies\lua-5.4.8\src\loslib.c" />
+    <ClCompile Include="..\.dependencies\lua-5.4.8\src\lparser.c" />
+    <ClCompile Include="..\.dependencies\lua-5.4.8\src\lstate.c" />
+    <ClCompile Include="..\.dependencies\lua-5.4.8\src\lstring.c" />
+    <ClCompile Include="..\.dependencies\lua-5.4.8\src\lstrlib.c" />
+    <ClCompile Include="..\.dependencies\lua-5.4.8\src\ltable.c" />
+    <ClCompile Include="..\.dependencies\lua-5.4.8\src\ltablib.c" />
+    <ClCompile Include="..\.dependencies\lua-5.4.8\src\ltm.c" />
+    <ClCompile Include="..\.dependencies\lua-5.4.8\src\lundump.c" />
+    <ClCompile Include="..\.dependencies\lua-5.4.8\src\lutf8lib.c" />
+    <ClCompile Include="..\.dependencies\lua-5.4.8\src\lvm.c" />
+    <ClCompile Include="..\.dependencies\lua-5.4.8\src\lzio.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\.dependencies\lua-5.4.8\include\lapi.h" />
+    <ClInclude Include="..\.dependencies\lua-5.4.8\include\lauxlib.h" />
+    <ClInclude Include="..\.dependencies\lua-5.4.8\include\lcode.h" />
+    <ClInclude Include="..\.dependencies\lua-5.4.8\include\lctype.h" />
+    <ClInclude Include="..\.dependencies\lua-5.4.8\include\ldebug.h" />
+    <ClInclude Include="..\.dependencies\lua-5.4.8\include\ldo.h" />
+    <ClInclude Include="..\.dependencies\lua-5.4.8\include\lfunc.h" />
+    <ClInclude Include="..\.dependencies\lua-5.4.8\include\lgc.h" />
+    <ClInclude Include="..\.dependencies\lua-5.4.8\include\ljumptab.h" />
+    <ClInclude Include="..\.dependencies\lua-5.4.8\include\llex.h" />
+    <ClInclude Include="..\.dependencies\lua-5.4.8\include\llimits.h" />
+    <ClInclude Include="..\.dependencies\lua-5.4.8\include\lmem.h" />
+    <ClInclude Include="..\.dependencies\lua-5.4.8\include\lobject.h" />
+    <ClInclude Include="..\.dependencies\lua-5.4.8\include\lopcodes.h" />
+    <ClInclude Include="..\.dependencies\lua-5.4.8\include\lopnames.h" />
+    <ClInclude Include="..\.dependencies\lua-5.4.8\include\lparser.h" />
+    <ClInclude Include="..\.dependencies\lua-5.4.8\include\lprefix.h" />
+    <ClInclude Include="..\.dependencies\lua-5.4.8\include\lstate.h" />
+    <ClInclude Include="..\.dependencies\lua-5.4.8\include\lstring.h" />
+    <ClInclude Include="..\.dependencies\lua-5.4.8\include\ltable.h" />
+    <ClInclude Include="..\.dependencies\lua-5.4.8\include\ltm.h" />
+    <ClInclude Include="..\.dependencies\lua-5.4.8\include\lua.h" />
+    <ClInclude Include="..\.dependencies\lua-5.4.8\include\lua.hpp" />
+    <ClInclude Include="..\.dependencies\lua-5.4.8\include\luaconf.h" />
+    <ClInclude Include="..\.dependencies\lua-5.4.8\include\lualib.h" />
+    <ClInclude Include="..\.dependencies\lua-5.4.8\include\lundump.h" />
+    <ClInclude Include="..\.dependencies\lua-5.4.8\include\lvm.h" />
+    <ClInclude Include="..\.dependencies\lua-5.4.8\include\lzio.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
@@ -71,20 +135,20 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\</OutDir>
-    <IntDir>$(SolutionDir)bin\intermediates\$(Platform)\$(Configuration)\</IntDir>
+    <OutDir>$(SolutionDir).bin\$(Platform)-$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir).bin\intermediates\$(Platform)-$(Configuration)\$(ProjectName)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <OutDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\</OutDir>
-    <IntDir>$(SolutionDir)bin\intermediates\$(Platform)\$(Configuration)\</IntDir>
+    <OutDir>$(SolutionDir).bin\$(Platform)-$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir).bin\intermediates\$(Platform)-$(Configuration)\$(ProjectName)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <OutDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\</OutDir>
-    <IntDir>$(SolutionDir)bin\intermediates\$(Platform)\$(Configuration)\</IntDir>
+    <OutDir>$(SolutionDir).bin\$(Platform)-$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir).bin\intermediates\$(Platform)-$(Configuration)\$(ProjectName)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <OutDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\</OutDir>
-    <IntDir>$(SolutionDir)bin\intermediates\$(Platform)\$(Configuration)\</IntDir>
+    <OutDir>$(SolutionDir).bin\$(Platform)-$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir).bin\intermediates\$(Platform)-$(Configuration)\$(ProjectName)\</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -92,6 +156,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir).dependencies\lua-5.4.8\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -106,6 +171,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir).dependencies\lua-5.4.8\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -118,6 +184,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir).dependencies\lua-5.4.8\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -132,75 +199,13 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir).dependencies\lua-5.4.8\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClInclude Include="..\lua-5.4.8\src\lapi.h" />
-    <ClInclude Include="..\lua-5.4.8\src\lauxlib.h" />
-    <ClInclude Include="..\lua-5.4.8\src\lcode.h" />
-    <ClInclude Include="..\lua-5.4.8\src\lctype.h" />
-    <ClInclude Include="..\lua-5.4.8\src\ldebug.h" />
-    <ClInclude Include="..\lua-5.4.8\src\ldo.h" />
-    <ClInclude Include="..\lua-5.4.8\src\lfunc.h" />
-    <ClInclude Include="..\lua-5.4.8\src\lgc.h" />
-    <ClInclude Include="..\lua-5.4.8\src\ljumptab.h" />
-    <ClInclude Include="..\lua-5.4.8\src\llex.h" />
-    <ClInclude Include="..\lua-5.4.8\src\llimits.h" />
-    <ClInclude Include="..\lua-5.4.8\src\lmem.h" />
-    <ClInclude Include="..\lua-5.4.8\src\lobject.h" />
-    <ClInclude Include="..\lua-5.4.8\src\lopcodes.h" />
-    <ClInclude Include="..\lua-5.4.8\src\lopnames.h" />
-    <ClInclude Include="..\lua-5.4.8\src\lparser.h" />
-    <ClInclude Include="..\lua-5.4.8\src\lprefix.h" />
-    <ClInclude Include="..\lua-5.4.8\src\lstate.h" />
-    <ClInclude Include="..\lua-5.4.8\src\lstring.h" />
-    <ClInclude Include="..\lua-5.4.8\src\ltable.h" />
-    <ClInclude Include="..\lua-5.4.8\src\ltm.h" />
-    <ClInclude Include="..\lua-5.4.8\src\lua.h" />
-    <ClInclude Include="..\lua-5.4.8\src\luaconf.h" />
-    <ClInclude Include="..\lua-5.4.8\src\lualib.h" />
-    <ClInclude Include="..\lua-5.4.8\src\lundump.h" />
-    <ClInclude Include="..\lua-5.4.8\src\lvm.h" />
-    <ClInclude Include="..\lua-5.4.8\src\lzio.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="..\lua-5.4.8\src\lapi.c" />
-    <ClCompile Include="..\lua-5.4.8\src\lauxlib.c" />
-    <ClCompile Include="..\lua-5.4.8\src\lbaselib.c" />
-    <ClCompile Include="..\lua-5.4.8\src\lcode.c" />
-    <ClCompile Include="..\lua-5.4.8\src\lcorolib.c" />
-    <ClCompile Include="..\lua-5.4.8\src\lctype.c" />
-    <ClCompile Include="..\lua-5.4.8\src\ldblib.c" />
-    <ClCompile Include="..\lua-5.4.8\src\ldebug.c" />
-    <ClCompile Include="..\lua-5.4.8\src\ldo.c" />
-    <ClCompile Include="..\lua-5.4.8\src\ldump.c" />
-    <ClCompile Include="..\lua-5.4.8\src\lfunc.c" />
-    <ClCompile Include="..\lua-5.4.8\src\lgc.c" />
-    <ClCompile Include="..\lua-5.4.8\src\linit.c" />
-    <ClCompile Include="..\lua-5.4.8\src\liolib.c" />
-    <ClCompile Include="..\lua-5.4.8\src\llex.c" />
-    <ClCompile Include="..\lua-5.4.8\src\lmathlib.c" />
-    <ClCompile Include="..\lua-5.4.8\src\lmem.c" />
-    <ClCompile Include="..\lua-5.4.8\src\loadlib.c" />
-    <ClCompile Include="..\lua-5.4.8\src\lobject.c" />
-    <ClCompile Include="..\lua-5.4.8\src\lopcodes.c" />
-    <ClCompile Include="..\lua-5.4.8\src\loslib.c" />
-    <ClCompile Include="..\lua-5.4.8\src\lparser.c" />
-    <ClCompile Include="..\lua-5.4.8\src\lstate.c" />
-    <ClCompile Include="..\lua-5.4.8\src\lstring.c" />
-    <ClCompile Include="..\lua-5.4.8\src\lstrlib.c" />
-    <ClCompile Include="..\lua-5.4.8\src\ltable.c" />
-    <ClCompile Include="..\lua-5.4.8\src\ltablib.c" />
-    <ClCompile Include="..\lua-5.4.8\src\ltm.c" />
-    <ClCompile Include="..\lua-5.4.8\src\lundump.c" />
-    <ClCompile Include="..\lua-5.4.8\src\lutf8lib.c" />
-    <ClCompile Include="..\lua-5.4.8\src\lvm.c" />
-    <ClCompile Include="..\lua-5.4.8\src\lzio.c" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
