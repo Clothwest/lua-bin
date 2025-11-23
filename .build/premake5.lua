@@ -12,8 +12,6 @@ workspace "lua-bin"
 
 ProjectDir = LocationDir .. "projects/"
 
-OutputDir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}/"
-
 targetdir("../.bin/")
 objdir("../.bin/obj/%{prj.name}")
 
