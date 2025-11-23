@@ -9,6 +9,7 @@
 ## Supported Lua Version
 
 [lua-5.4.8][5.4.8]
+[lua-5.4.7][5.4.7]
 
 ## Dependencies
 
@@ -16,3 +17,4 @@
 > Premake - [premake.github.io](https://premake.github.io)
 
 [5.4.8]: https://github.com/Clothwest/lua-bin/tree/lua-5.4.8
+[5.4.7]: https://github.com/Clothwest/lua-bin/tree/lua-5.4.7
