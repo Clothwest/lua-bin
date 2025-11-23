@@ -1,0 +1,3 @@
+#include "LuacIcon.h"
+
+LUAC_ICON_ID ICON "../luac.ico"
