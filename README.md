@@ -8,7 +8,7 @@
 
 ## Supported Lua Version
 
-[lua-5.4.8][5.4.8]
+[lua-5.4.8][5.4.8]  
 [lua-5.4.7][5.4.7]
 
 ## Dependencies
