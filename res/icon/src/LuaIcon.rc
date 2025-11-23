@@ -1,0 +1,3 @@
+#include "LuaIcon.h"
+
+LUA_ICON_ID ICON "../lua.ico"
