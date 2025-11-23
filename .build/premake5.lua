@@ -15,7 +15,7 @@ ProjectDir = LocationDir .. "projects/"
 OutputDir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}/"
 
 targetdir("../.bin/")
-objdir("../.bin/obj/")
+objdir("../.bin/obj/%{prj.name}")
 
 systemversion "latest"
 optimize "On"
