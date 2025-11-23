@@ -1,4 +1,4 @@
-# lua-bin
+# Lua-bin
 
 `lua-bin` is a repository for building Lua binaries on Windows.
 
@@ -13,8 +13,8 @@
 
 ## Dependencies
 
-> Lua - [www.lua.org](www.lua.org)  
-> Premake - [premake.github.io](premake.github.io)
+> Lua - [www.lua.org](https://www.lua.org)  
+> Premake - [premake.github.io](https://premake.github.io)
 
 ## Notes
 
