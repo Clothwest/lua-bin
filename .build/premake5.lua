@@ -31,7 +31,7 @@ project "luac"
 	location(ProjectDir)
 	kind "ConsoleApp"
 
-	files { "../src/lua.c", "../res/icon/src/LuacIcon.h", "../res/icon/src/LuacIcon.rc" }
+	files { "../src/luac.c", "../res/icon/src/LuacIcon.h", "../res/icon/src/LuacIcon.rc" }
 
 	links { "lualib" }
 
