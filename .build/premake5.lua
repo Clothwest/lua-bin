@@ -12,8 +12,8 @@ workspace "lua-bin"
 
 ProjectDir = LocationDir .. "projects/"
 
-targetdir("../.bin/")
-objdir("../.bin/obj/%{prj.name}")
+targetdir(".bin/")
+objdir(".bin/obj/%{prj.name}")
 
 systemversion "latest"
 optimize "On"
