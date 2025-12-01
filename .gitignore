@@ -1,4 +1,4 @@
-/.bin/
+/.build/.bin/
 /.build/.vs-workspace/
 
 LuaIcon.aps
